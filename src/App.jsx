@@ -1,3 +1,5 @@
-const App = () => <>Music App</>;
+import MainPage from "./pages/MainPage/MainPage";
 
-export default App
+const App = () => <MainPage />;
+
+export default App;
