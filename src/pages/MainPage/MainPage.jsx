@@ -4,7 +4,7 @@ import trackList from "../../assets/trackList";
 import style from "./mainPage.module.scss";
 
 const MainPage = () => {
-    return (
+        return (
         <div className={style.search}>
             {/* <Input
                 className={style.input}
