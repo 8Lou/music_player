@@ -1,10 +1,11 @@
 
 import trackList from "../../assets/trackList";
+import Track from "../../components/Track/Track";
 
 import style from "./mainPage.module.scss";
 
 const MainPage = () => {
-        return (
+    return (
         <div className={style.search}>
             {/* <Input
                 className={style.input}
@@ -13,7 +14,7 @@ const MainPage = () => {
             {/* /> */}
             <div className={style.list}>
                 {trackList.map((track) => (
-                    <div>{JSON.stringify(track)}</div>
+                    <Track key={track.id} {...track} />
                 ))}
             </div>
         </div>
