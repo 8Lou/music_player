@@ -20,6 +20,5 @@ git subtree push --prefix dist https://8lou.github.io/music_player/ gh-pages
 npm run build
 
 ### npm run dev
-17:46
 
-While working on this project, I encountered difficulties. These difficulties were related to the problem of visualizing the deployment. This means that the completed project was not displayed on the Github. I found out what the problem was. It was a mismatch of paths. This is because the assembly was performed manually, and not automatically, as Reacn + Vite does. The Russian development team, creating an analog of CHATJPT-3.5-turbo was helped me with the search for incidents.
+While working on this project, I encountered difficulties. These difficulties were related to the problem of visualizing the deployment. It means that the completed project was not displayed on the Github. I found out what the problem was. It was a mismatch of paths. This is because the assembly was performed manually, and not automatically, as Reacn + Vite does. The Russian development team, creating an analog of CHATJPT-3.5-turbo was helped me with the search for incidents.

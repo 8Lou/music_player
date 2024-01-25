@@ -31,11 +31,6 @@ const MainPage = () => {
             <Input className={style.input}
                 placeholder="Поиск"
                 onChange={handleChange} />
-            {/* <Input
-                className={style.input}
-                placeholder="Поиск треков"
-                onChange={handleChange} */}
-            {/* /> */}
             <div className={style.list}>
                 {tracks.map((track) => (
                     <Track key={track.id} {...track} />
@@ -44,7 +39,5 @@ const MainPage = () => {
         </div>
     );
 }
-
-
 
 export default MainPage;

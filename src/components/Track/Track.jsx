@@ -7,7 +7,7 @@ import { AudioContext } from "../../context/AudioContext.jsx";
 import cn from "classnames";
 
 const Track = (track) => {
-    const { id, src, preview, title, artists, duration } = track;
+    const { id, preview, title, artists, duration } = track;
 
     const { handleToggleAudio, currentTrack, isPlaying } =
         useContext(AudioContext);
@@ -21,7 +21,6 @@ const Track = (track) => {
             <IconButton onClick={() => handleToggleAudio(track)}>
                 {isCurrentTrack && isPlaying ? <Pause /> : <PlayArrow />}
             </IconButton>
-            {/* {JSON.stringify(track)} */}
             <img className={style.preview} src={preview} alt="" />
             <div className={style.credits}>
                 <b>{title}</b>
@@ -29,7 +28,7 @@ const Track = (track) => {
             </div>
             <p>{formattedDuration}</p>
         </div>
-    )
-}
+    );
+};
 
 export default Track;
